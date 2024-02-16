@@ -1,0 +1,123 @@
+.layout {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperPercentage {
+  width: 100%;
+  height: 8.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+.contentPercentage {
+  position: relative;
+  width: 80%;
+  max-width: 31.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentPercentage p {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.iconBack {
+  position: absolute;
+  left: 0;
+  margin-top: -0.8rem;
+}
+
+.iconBack svg {
+  color: #ffffff;
+}
+
+.contentAnswer {
+  position: relative;
+  top: 8.5rem;
+  z-index: 2;
+}
+
+.answerIconText {
+  padding: 3.25rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentAnswer h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  /* padding: 3.25rem 0 0 0; */
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.containerBordered {
+  width: 100%;
+  height: calc(100% - 8.5rem);
+  border-top-left-radius: 3.125rem;
+  border-top-right-radius: 3.125rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.buttons {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 767px) {
+  .containerBordered {
+    height: calc(100% - 12.5rem);
+  }
+
+  .wrapperPercentage {
+    height: 12.5rem;
+  }
+
+  .contentPercentage {
+    width: 100%;
+  }
+
+  .contentAnswer {
+    top: 12.5rem;
+  }
+
+  .answerIconText {
+    padding: 6.25rem 15% 0 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentAnswer h1 {
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 3.35rem;
+    /* padding: 6.25rem 15% 0 15%; */
+  }
+
+  .buttons {
+    width: 80%;
+    max-width: 35rem;
+    margin: 7.5rem auto 0 auto;
+  }
+}
