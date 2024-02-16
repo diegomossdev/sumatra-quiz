@@ -8,7 +8,7 @@ import ThinkingFace from "./svgs/ThinkingFace.svg";
 import StarStruck from "./svgs/StarStruck.svg";
 import styles from "./css.module.css";
 
-export const Home = () => {
+export default function HomePage() {
   const [numberAnswer, setNumberAnswer] = React.useState(1);
   const [changing, setChanging] = React.useState(false);
 
@@ -231,4 +231,4 @@ export const Home = () => {
       {renderAnswer()}
     </div>
   );
-};
+}
